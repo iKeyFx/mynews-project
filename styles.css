@@ -527,7 +527,7 @@ main {
 /* All Single Source End */
 
 /* Mobile View  */
-@media screen and (max-width: 800px) and (min-width: 10px) {
+@media screen and (max-width: 800px) {
   .hambuger {
     display: grid;
   }
