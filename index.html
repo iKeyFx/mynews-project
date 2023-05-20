@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon  -->
+    <link rel="icon" href="./images/icon.svg" />
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome  -->
+    <script
+      src="https://kit.fontawesome.com/d3ffad999e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Stylesheet  -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JS  -->
+    <script type="module" src="src/controller.js"></script>
+    <title>MyNews - Best news site</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="hambuger">
+        <img class="icon-menu" src="images/icon-menu.svg" alt="icon menu" />
+        <img
+          class="menu-close"
+          src="./images/icon-close-menu.svg"
+          alt="menu-close"
+        />
+      </div>
+      <div class="nav_logo">
+        <a href="#">
+        MyNews</a></div>
+      <div class="nav_whole">
+        <div class="nav_links">
+          <ul class="nav_links_ul">
+            <li id="bbc-news"><a class="test_link" href="#bbc">Bbc News</a></li>
+            <li id="cnn-news"> <a href="#cnn">Cnn News</a></li>
+            <li><a href="#Business">Business</a></li>
+            <li><a href="#Entertainment%20and%20Arts">Entertainment</a></li>
+            <li><a href="#Fashion">Fashion</a></li>
+            <li><a href="#Health">Health</a></li>
+            <li><a href="#Sports">Sports</a></li>
+          </ul>
+        </div>
+        <div class="nav_links nav_links-right">
+          <ul>
+            <!-- <li><a href="#">connect</a></li> -->
+            <li>
+              <form class="search_form">
+                <input type="text" placeholder=" Search.." name="search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- HOMEPAGE START -->
+      <section class="section_1">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-dark">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <!-- <div class="carousel-item active">
+              <img
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/449C/production/_129246571_33be7573ffb663213468f456c75b115c35a3917d.jpg.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="details_warpper">
+                  <h3 class="content_title">
+                    <a class="title_link" href="">
+                      Sarah Polley told to return Oscar in 'cruel' April Fools'
+                      prank
+                    </a>
+                  </h3>
+                  <p class="content_description">
+                    The film-maker, who won an Oscar for Women Talking, got a
+                    letter asking her to 'mail it back'
+                  </p>
+                  <div class="cat_date">
+                    <div class="content_date">1st April 2023</div>
+                    <div class="date_seperator">|</div>
+                    <div class="content_categories">
+                      <a class="cat_link" href="">Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="carousel-item">
+              <img
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/230D/production/_129237980_gettyimages-477279648.jpg.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="details_warpper">
+                  <h3 class="content_title">
+                    <a class="title_link" href="">
+                      Oldham Coliseum: Historic theatre stages final act after
+                      funding cut
+                    </a>
+                  </h3>
+                  <p class="content_description">
+                    The film-maker, who won an Oscar for Women Talking, got a
+                    letter asking her to 'mail it back'
+                  </p>
+                  <div class="cat_date">
+                    <div class="content_date">1st April 2023</div>
+                    <div class="date_seperator">|</div>
+                    <div class="content_categories">
+                      <a class="cat_link" href="">Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://ichef.bbci.co.uk/news/976/cpsprodpb/449C/production/_129246571_33be7573ffb663213468f456c75b115c35a3917d.jpg.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <div class="details_warpper">
+                  <h3 class="content_title">
+                    <a class="title_link" href="">
+                      Judy Blume worried about intolerance and book banning in
+                      the US
+                    </a>
+                  </h3>
+                  <p class="content_description">
+                    Judy Blume says banning books 'has become political... it's
+                    worse than it was in the 80s'
+                  </p>
+                  <div class="cat_date">
+                    <div class="content_date">1st April 2023</div>
+                    <div class="date_seperator">|</div>
+                    <div class="content_categories">
+                      <a class="cat_link" href="">Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="section_2">
+        <hr />
+        <div class="latest_news">
+          <h3><a href=""> Latest News </a></h3>
+        </div>
+        <hr />
+        <div class="grid_container">
+          <div class="grid--1">
+            <div class="cat_tag">
+              <div class="line_tag">|</div>
+              <h3 class="bbc">BBC</h3>
+            </div>
+            <div class="bbc-home">
+            <!-- <div class="news_container">
+              <div class="news_content">
+                <div class="media_image">
+                  <img
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/449C/production/_129246571_33be7573ffb663213468f456c75b115c35a3917d.jpg.webp"
+                    alt="bbc news"
+                  />
+                </div>
+                <div class="media_summary">
+                  <div class="media_title">
+                    <a href="">
+                      Oldham Coliseum: Historic theatre stages final act after
+                      funding cut</a
+                    >
+                  </div>
+                  <p class="media_description">
+                    The film-maker, who won an Oscar for Women Talking, got a
+                    letter asking her to 'mail it back
+                  </p>
+                  <div class="media_date-cat">
+                    <div class="media_date">1st April 2023</div>
+                    <div class="media_seperator">|</div>
+                    <div class="media_categories">
+                      <a class="media_link" href="">Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  -->
+           </div>
+          </div>
+          <div class="grid--2">
+            <div class="cat_tag">
+              <div class="line_tag">|</div>
+              <h3 class="bbc">CNN</h3>
+            </div>
+           <div class="cnn-home">
+            <!-- CONTEMT 1  -->
+            <!-- <div class="news_container">
+              <div class="news_content">
+                <div class="media_image">
+                  <img
+                    src="https://media.cnn.com/api/v1/images/stellar/prod/230403143558-bob-iger-disney-1218-file.jpg?c=16x9&q=h_720,w_1280,c_fill"
+                    alt="bbc news"
+                  />
+                </div>
+                <div class="media_summary">
+                  <div class="media_title">
+                    <a href="">
+                      Bob Iger calls Florida actions against Disney World
+                      ‘anti-business’</a
+                    >
+                  </div>
+                  <p class="media_description">
+                    Disney CEO Bob Iger fought back against Florida Governor Ron
+                    DeSantis’ actions against his company
+                  </p>
+                  <div class="media_date-cat">
+                    <div class="media_date">4th April 2023</div>
+                    <div class="media_seperator">|</div>
+                    <div class="media_categories">
+                      <a class="media_link" href="">Business</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- HOMEPAGE END -->
+    <!-- SINGLE PAGE START -->
+   <div class="single_page--con">
+     <div class="single_bread_con">
+        <!-- breadcrumb  -->  
+        <!-- <div class="breadcrumb_contentpage" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb"> -->
+        <!-- <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol> -->
+        <!-- </div> -->
+        <!-- breadcrumb End -->
+        <!-- <div class="single_page_wrapper"> -->
+        <!-- <div class="single_page_content">
+          <div class="single_page_head">
+            <div class="news_title_single">
+              <h3>
+                ‘I am truly sorry.’ Credit Suisse chair apologizes at final
+                shareholder meeting
+              </h3>
+            </div>
+            <p class="single_page_author">By Hanna Ziady</p>
+            <div class="single_page_date_cat">
+              <div class="single_date">4th April 2023</div>
+              <div class="single_seperator">|</div>
+              <div class="single_categories">
+                <a class="single_link" href="">Business</a>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="single_page_details">
+            <div class="single_image">
+              <img
+                src="https://media.cnn.com/api/v1/images/stellar/prod/230403083616-02-credit-suisse-switzerland-0320.jpg?c=16x9&q=h_720,w_1280,c_fill"
+                alt="cnn news"
+              />
+            </div>
+            <div class="page_details">
+              <p>
+                <b> London CNN </b> — Disney CEO Bob Iger fought back against
+                Florida Governor Ron DeSantis’ actions Credit Suisse chairman
+                Axel Lehmann apologized to shareholders after the ailing Swiss
+                lender was unable to avoid last month’s emergency rescue.
+              </p>
+            </div>
+          </div> -->
+       <!-- </div> -->
+        <!-- </div> -->
+      </div>
+      <aside>
+        <div class="vertiacal_line"></div>
+        <div class="sidebar">
+          <div class="sidebar_heading">
+            <h3>Related News</h3>
+          </div>
+          <div class="sidebar_content_con">
+            <!-- CONTENT 1 -->
+            <!-- <div class="sidebar_content">
+              <div class="content_image">
+                <img
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/230404101120-tesla-beer-gigabier.jpg?c=16x9&q=h_720,w_1280,c_fill"
+                  alt="news"
+                />
+              </div>
+              <div class="sidebar_content_title">
+                <p>
+                  <a href=""
+                    >Tesla is selling a German beer in a Cybertruck bottle</a
+                  >
+                </p>
+              </div>
+            </div> -->
+          </div> 
+        </div>
+      </aside>
+
+    </div>
+    <div class="spinner-class">
+      <div class="spinner"></div>
+      <p>Wait, Loading Content...</p>
+    </div>
+    <div class="errorlead">
+      <div class="error-div">
+        <div class="error-pop">
+          ::)
+          <p>Can't get the right query, please refresh.😞</p>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="gen_con">
+    <div class="terms_con">
+      <div class="terms_content">
+        <p>Terms of Use</p>
+
+<p>Welcome to our news website! These Terms of Use govern your use of our website and any services or content provided through it. By accessing or using our website, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please refrain from using our website.</p>
+
+<p>1. Content: Our website provides news articles, opinion pieces, and other content for informational purposes only. The information presented on our website may not always be accurate, complete, or up-to-date. We do not guarantee the reliability, suitability, or availability of the content.</p>
+
+<p>2. Intellectual Property: All content on our website, including text, images, videos, and logos, is protected by copyright and other intellectual property laws. You may not reproduce, modify, distribute, or exploit any content without our prior written consent.</p>
+
+<p>3. User Conduct: You agree to use our website in a responsible and lawful manner. You must not engage in any activity that violates applicable laws or infringes upon the rights of others. This includes, but is not limited to, posting defamatory, obscene, or offensive content, interfering with the website's functionality, or attempting unauthorized access to our systems.</p>
+
+<p>4. Third-Party Links: Our website may contain links to third-party websites or resources. These links are provided for your convenience, but we do not endorse or have control over the content or practices of these websites. We are not responsible for any damages or losses incurred as a result of your use of third-party websites.</p>
+
+<p>5. Disclaimer of Warranty: We make no warranties or representations about the accuracy, reliability, or suitability of the content on our website. Your use of the website is at your own risk. We disclaim any liability for damages arising from the use of our website.</p>
+
+<p>6. Indemnification: You agree to indemnify and hold us harmless from any claims, damages, or liabilities arising out of your use of the website or any violation of these Terms of Use.</p>
+
+<p>7. Modifications: We reserve the right to modify or update these Terms of Use at any time. It is your responsibility to review these terms periodically. Continued use of the website after any changes constitutes acceptance of the modified terms.</p>
+
+<p>8. Governing Law: These Terms of Use shall be governed by and construed in accordance with the laws of [Jurisdiction]. Any disputes arising out of these terms shall be subject to the exclusive jurisdiction of the courts of [Jurisdiction].</p>
+
+<p>Please contact us if you have any questions or concerns regarding these Terms of Use. Thank you for using our news website!</p>
+      </div>
+    </div>
+    <div class="privacy_con">
+      <div class="privacy_content">
+        <p>Privacy Policy</p>
+
+<p>Welcome to our news website! This Privacy Policy outlines how we collect, use, and protect your personal information when you use our website. By accessing or using our website, you consent to the practices described in this Privacy Policy. If you do not agree with any part of this policy, please refrain from using our website.</p>
+
+<p>1. Information Collection: We may collect personal information, such as your name and email address, when you voluntarily provide it to us through forms or subscriptions on our website. We may also automatically collect certain non-personal information, such as your IP address and browser type, through cookies or similar technologies.</p>
+
+<p>2. Use of Information: We use the collected information to provide and improve our website and services. We may use your personal information to communicate with you, send newsletters or updates, respond to inquiries, or personalize your experience on our website. We do not sell or rent your personal information to third parties.</p>
+
+<p>3. Cookies: We use cookies and similar technologies to enhance your browsing experience and analyze usage patterns on our website. You can control the use of cookies through your browser settings, but please note that disabling cookies may affect certain features of our website.</p>
+
+<p>4. Third-Party Services: We may use third-party services, such as analytics tools or advertising networks, that may collect information about your use of our website. These third parties have their own privacy policies and practices, and we recommend reviewing their policies for more information.</p>
+
+<p>5. Data Security: We take reasonable measures to protect your personal information from unauthorized access, disclosure, or alteration. However, please be aware that no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
+
+<p>6. Children's Privacy: Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us, and we will promptly remove the information.</p>
+
+<p>7. Changes to the Privacy Policy: We reserve the right to update or modify this Privacy Policy at any time. Any changes will be effective immediately upon posting on our website. We encourage you to review this Privacy Policy periodically.</p>
+
+<p>8. Contact Us: If you have any questions or concerns regarding this Privacy Policy or our privacy practices, please contact us using the provided contact information on our website.</p>
+
+<p>Thank you for visiting our news website and entrusting us with your personal information.</p>
+      </div>
+    </div>
+    <div class="advert_con">
+      <div class="advert_content">
+        <p>Advertise With Us</p>
+
+<p>Thank you for your interest in advertising on our news website. This page provides information about advertising opportunities and guidelines for partnering with us to reach our audience. Please review the following details, and feel free to contact us if you have any further questions.</p>
+
+<p>1. Ad Placement: We offer various advertising placements on our website, including banner ads, sponsored content, and native advertising. Our team can work with you to determine the best placement options that align with your advertising goals and our website's design and user experience.</p>
+
+<p>2. Targeted Audience: Our news website attracts a diverse and engaged audience interested in current events, breaking news, and informative content. Our readership includes individuals from different demographics, providing advertisers with an opportunity to reach a wide range of potential customers.</p>
+
+<p>3. Ad Formats: We accept ads in various formats, including image-based ads (JPEG, PNG, GIF) and HTML5 ads. Advertisements should meet the specified dimensions and file size requirements to ensure optimal display on our website.</p>
+
+<p>4. Ad Approval: All ads are subject to review and approval to ensure they meet our content guidelines and align with our values. We reserve the right to reject or remove any ads that are deemed inappropriate, misleading, or violate any applicable laws or regulations.</p>
+
+<p>5. Ad Campaign Duration: We offer flexible advertising options, including short-term campaigns and long-term partnerships. Advertisers can choose the duration that suits their marketing objectives, whether it's a specific event or an ongoing brand promotion.</p>
+
+<p>6. Pricing and Payment: Our advertising rates vary based on ad placement, size, and duration. Please contact us to request our current rate card and discuss specific pricing details. Payment terms will be agreed upon between both parties, and we accept various payment methods.</p>
+
+<p>7. Performance Tracking: We provide performance metrics and reports to our advertising partners to evaluate the effectiveness of their campaigns. These reports include data such as impressions, clicks, and engagement, enabling advertisers to assess their return on investment.</p>
+
+<p>8. Contact Us: If you are interested in advertising with us or have any inquiries, please reach out to our advertising team through the contact information provided on our website. We will be happy to assist you and discuss how we can help you achieve your advertising goals.</p>
+
+<p>Thank you for considering our news website as a platform for your advertising needs. We look forward to working with you and helping you connect with our valuable audience.</p>
+      </div>
+    </div>
+    <div class="act_con">
+      <div class="act_content">
+        <p>Act of Statement</p>
+
+<p>At our news website, we are committed to providing accurate, reliable, and unbiased information to our readers. We adhere to high journalistic standards and uphold the principles of integrity, fairness, and transparency. This Act of Statement outlines our commitment and the guiding principles that shape our news reporting.</p>
+
+<p>1. Accuracy and Verification: We strive to present news that is accurate, factually correct, and verified through credible sources. Our journalists and editors follow rigorous fact-checking processes to ensure the information we publish is reliable and trustworthy. If we make an error, we promptly correct it and provide clarifications when necessary.</p>
+
+<p>2. Objectivity and Impartiality: We are committed to providing balanced and impartial news coverage. We aim to present multiple perspectives and diverse viewpoints on important issues. Our journalists separate opinion and analysis from news reporting, maintaining a clear distinction between factual reporting and personal opinion.</p>
+
+<p>3. Independence and Editorial Freedom: We maintain an independent and free press, free from undue influence or interference. Our editorial decisions are based on journalistic merit, public interest, and the pursuit of truth. We do not allow advertisers, sponsors, or external entities to influence our editorial content or compromise our journalistic integrity.</p>
+
+<p>4. Ethical Conduct: We adhere to ethical guidelines and professional codes of conduct in our news reporting. We respect privacy rights, avoid conflicts of interest, and ensure the protection of vulnerable individuals. We maintain strict confidentiality of sources and protect whistleblowers who provide information in the public interest.</p>
+
+<p>5. Transparency and Accountability: We are transparent about our news gathering processes and sources. We clearly attribute information to its origin and provide clear disclosures regarding potential biases or conflicts of interest. We encourage feedback from our readers and hold ourselves accountable for any mistakes or lapses in our reporting.</p>
+
+<p>6. Editorial Diversity and Inclusivity: We value diversity in our newsroom and strive to represent a wide range of voices and perspectives in our coverage. We are committed to inclusivity, avoiding discrimination based on race, gender, religion, or any other protected characteristic. We aim to reflect the diverse communities we serve in our reporting.</p>
+
+<p>7. Community Engagement: We actively engage with our readers and the community we serve. We encourage constructive dialogue, feedback, and contributions from our audience. We value their input and strive to address their concerns and interests in our reporting.</p>
+
+<p>8. Continuous Improvement: We are committed to continuous improvement in our news practices. We stay abreast of emerging technologies, industry standards, and best practices in journalism. We embrace innovation while upholding the core values of accurate, responsible, and ethical news reporting.</p>
+
+<p>Thank you for placing your trust in our news website. We are dedicated to delivering quality journalism and serving as a reliable source of information for our readers.</p>
+      </div>
+    </div>
+    <div class="transcipt_con">
+      <div class="transcript_content">
+        <p>Transcript</p>
+
+<p>Anchor: Good evening, and welcome to the daily news update. Here are the latest headlines for today, [Date].</p>
+
+<p>Headline 1: "Political Leaders Gather for Global Summit on Climate Change"</p>
+<p>Reporter: World leaders from across the globe have gathered in [City] for a crucial summit on climate change. The summit aims to address pressing environmental issues, promote sustainable practices, and set ambitious targets to combat climate change. Discussions are expected to focus on reducing greenhouse gas emissions, transitioning to renewable energy sources, and protecting biodiversity.</p>
+
+<p>Headline 2: "Economy Shows Signs of Recovery as Unemployment Rate Declines"</p>
+<p>Reporter: The latest economic indicators suggest a positive trend in the global economy. The unemployment rate has declined by [percentage], indicating increased job opportunities. Experts attribute this improvement to the gradual reopening of businesses, government stimulus packages, and a rise in consumer spending. However, there are concerns about the long-term sustainability of the recovery and the need to address income inequality.</p>
+
+<p>Headline 3: "Health Authorities Issue Guidelines for COVID-19 Vaccination Boosters"</p>
+<p>Reporter: Health authorities have released new guidelines regarding COVID-19 vaccine boosters. The guidelines recommend additional doses for certain populations, such as immunocompromised individuals and those at higher risk of severe illness. Authorities emphasize the importance of completing the initial vaccination series for broader population coverage. The decision comes amidst the ongoing efforts to control the spread of COVID-19 variants and maintain public health.</p>
+
+<p>Headline 4: "Sports Update: Team [Name] Wins Championship Title"</p>
+<p>Reporter: In sports news, the [Name] team emerged victorious in the highly anticipated championship game held last night. The thrilling match showcased exceptional athleticism and teamwork. The victory marks a significant milestone for the team, bringing pride to their fans and earning them the coveted championship title.</p>
+
+<p>Headline 5: "Entertainment Buzz: Oscar-Winning Actor to Star in Upcoming Film"</p>
+<p>Reporter: Exciting news from the entertainment industry! Renowned Oscar-winning actor [Actor's Name] has signed on to star in an upcoming film. The highly anticipated project, directed by [Director's Name], has generated significant buzz among film enthusiasts. Fans and critics are eagerly awaiting the release, expecting a captivating performance from the acclaimed actor.</p>
+
+<p>That wraps up today's news update. Stay tuned for more updates and in-depth reports on these and other stories. Thank you for joining us, and have a great day!</p>
+      </div>
+    </div>
+  </div>
+    <!-- All Single Source Start  -->
+    <article>
+      <div class="single_source_con">
+        <!-- breadcrumb  -->
+        <div class ="single_source_con_breadcrumb" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <!-- <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Bbc News</li>
+          </ol> -->
+        </div>
+        <!-- breadcrumb End -->
+        <div class="single_source_content">
+          <div class="single_source_heading">
+            <!-- <h3>BBC News</h3> -->
+          </div>
+          <div class="single_source_news">
+            <!-- Content  1  -->
+            <!-- <div class="source_news_container">
+              <div class="source_news_content">
+                <div class="source_media_image">
+                  <img
+                    src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1CE3/production/_127559370_gowr_review_screenshot_03.jpg.webp"
+                    alt="bbc news"
+                  />
+                </div>
+                <div class="source_media_summary">
+                  <div class="source_media_title">
+                    <a href="">
+                      Action game God of War: Ragnarok wins six Baftas</a
+                    >
+                  </div>
+                  <p class="source_media_description">
+                    God of War: Ragnarok takes the most prizes, but Vampire
+                    Survivors is the surprise best game winner.
+                  </p>
+                  <div class="source_media_date-cat">
+                    <div class="source_media_date">1st April 2023</div>
+                    <div class="source_media_seperator">|</div>
+                    <div class="source_media_categories">
+                      <a class="source_media_link" href="">Entertainment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="pagination">
+          <div aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <!-- <li class="page-item disabled">
+                <a  data-page="-1" class="page-link">Previous</a>
+              </li>
+              <li class="page-item"><a data-page="1" class="page-link" href="#">1</a></li>
+              <li  class="page-item"><a data-page="2" class="page-link" href="#">2</a></li>
+              <li class="page-item"><a data-page="3" class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a data-page="+1" class="page-link" href="#">Next</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- All Single Source End  -->
+    </article>
+    <footer id="footer">
+      <div class="footer_con">
+        <div class="footeer_nav">
+          <div class="nav_logo">MyNews</div>
+          <div class="social_medials">
+            <a href="#facebook.com"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+            <a href="#instagram.com">
+              <i class="fa-brands fa-instagram fa-xl" style="color: #e10959"></i
+            ></a>
+            <a href="#twitter.com"><i class="fa-brands fa-twitter fa-xl"></i></a>
+          </div>
+        </div>
+        <div class="useful_links">
+          <a href="#terms">Terms of Use</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#Advertise">Advertise with us</a>
+          <a href="#ActOf">Act Statement</a>
+          <a href="#Transcript">Transcript</a>
+        </div>
+        <p>© 2023 MyNews. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- bootstrap Script  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
