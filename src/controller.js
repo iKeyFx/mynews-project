@@ -19,7 +19,11 @@ navView.menuOpen.addEventListener("click", () => {
   navView.updateMenu("grid", "grid");
 });
 
-
+// // Try 
+// let screenW = screen.width;
+// if (screenW <= 800) { 
+//   console.log(screenW)
+// }
 
 // Menu Close handler 
 navView.menuClose.addEventListener("click", () => {
