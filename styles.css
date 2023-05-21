@@ -527,7 +527,7 @@ main {
 /* All Single Source End */
 
 /* Mobile View  */
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 800px) {
   .hambuger {
     display: grid;
   }
@@ -655,7 +655,7 @@ main {
     display: flex;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-device-width: 450px) {
   .section_1 {
     display: none;
   }
@@ -692,7 +692,7 @@ main {
 
 /* SINGLE Source PAge Mobile  */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-device-width: 500px) {
   .single_source_news {
     display: grid;
     grid-template-columns: 1fr;
