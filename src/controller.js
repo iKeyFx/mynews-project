@@ -80,8 +80,19 @@ const getIdForPages =  function (data) {
 const loadCategory = async function(data) {
   try {
     if (!data) throw new error;
+
     await model.categoryNews(data)
+    
     timeHandler.timerOtherCategory()
+
+    // Change Entertainmnet data 
+    if (data === 'Entertainment%20and%20Arts') {
+     const data = 'Entertainment'
+      singleSource.updatePageSource(data)
+      singleSource.generateMarkUp(model.getNewsPerSourcePage())
+       paginationView.render(model.store.search)
+      return
+    }
 
     singleSource.updatePageSource(data)
     singleSource.generateMarkUp(model.getNewsPerSourcePage())
@@ -135,6 +146,9 @@ const navRegister = function (data) {
       if (id !== '') {
        clearView.clearSections()
       }
+      if (id === '') {
+        clearView.clearForHome()
+       }
       const singleSourcePage = document.querySelector('.single_source_con');
       singleSourcePage.style.display = 'none';
 

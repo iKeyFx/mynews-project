@@ -66,3 +66,8 @@ export const clearForTranscript = () => {
   advertCon.style.display = 'none'
   actOfCon.style.display = 'none'
 }
+
+export const clearForHome = () => {
+  const parentEl = document.querySelector('.single_page--con')
+       parentEl.style.display = 'none';
+}
