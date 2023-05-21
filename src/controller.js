@@ -19,11 +19,16 @@ navView.menuOpen.addEventListener("click", () => {
   navView.updateMenu("grid", "grid");
 });
 
-// // Try 
-// let screenW = screen.width;
-// if (screenW <= 800) { 
-//   console.log(screenW)
-// }
+// Try 
+let screenW = screen.width;
+if (screenW <= 800) { 
+  const parentEl = document.querySelector('.nav_links_ul');
+  parentEl.addEventListener('click', function (e) {
+    const btn = e.target.closest('.test_link')
+    if(!btn) return
+    navView.updateMenu("none", "none");
+  })
+}
 
 // Menu Close handler 
 navView.menuClose.addEventListener("click", () => {
