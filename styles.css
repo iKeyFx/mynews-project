@@ -71,7 +71,13 @@ body {
   background-color: #ccc;
   position: relative;
 }
-
+.error-ok {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -82,7 +88,11 @@ body {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
-.terms_con, .privacy_con, .advert_con, .act_con, .transcipt_con{
+.terms_con,
+.privacy_con,
+.advert_con,
+.act_con,
+.transcipt_con {
   margin-top: 4rem;
   padding: 50px;
   display: none;
@@ -308,6 +318,7 @@ footer {
   justify-content: center;
   text-align: center;
   color: var(--cl--white);
+  margin-top: 30px;
 }
 footer .nav_logo {
   margin: 20px 0;
@@ -363,9 +374,7 @@ footer p {
 }
 
 /* SINGLE PAGE  */
-main {
-  /* display: none; */
-}
+
 .single_source_con {
   display: none;
 }
@@ -422,7 +431,7 @@ main {
 .sidebar {
   width: 26%;
   position: absolute;
-  top: 10%;
+  top: 6.5%;
   right: 2%;
 }
 .sidebar_heading {
@@ -721,6 +730,9 @@ main {
     font-size: 10px;
   }
   .breadcrumb {
-    font-size: 13px;
+    font-size: 10px;
+  }
+  .breadcrumb a {
+    color: var(--cl--red);
   }
 }

@@ -44,7 +44,7 @@ class paginationView extends View {
     // On other categoryNews page 
     if (currentPage === 1 && totalPage === 1) {
         return `
-        <li class="page-item"><a data-page="1" class="page-link" href="#${id}">Page  ${currentPage}</a></li> 
+        <li class="page-item disabled"><a data-page="1" class="page-link" href="#${id}">Page  ${currentPage}</a></li> 
     `
    }
         //    On CNN 

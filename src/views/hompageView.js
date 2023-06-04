@@ -1,14 +1,13 @@
 import View from "./view";
 
 class hompageView extends View {
-  
-    constructor() {
-        super()
-    }
+  constructor() {
+    super();
+  }
 
-generateMarkUp(data) {
-    data.map(el => {
-        const html = `
+  generateMarkUp(data) {
+    data.map((el) => {
+      const html = `
         <div class="news_container">
                   <div class="news_content">
                     <div class="media_image">
@@ -30,28 +29,25 @@ generateMarkUp(data) {
                         <div class="media_date">${el.date}</div>
                         <div class="media_seperator">|</div>
                         <div class="media_categories">
-                          <a class="media_link" href="">${el.category}</a>
+                          <a class="media_link" href="#${el.category}">${el.category}</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-        `
-        // console.log(html)
-    
-        const id =  window.location.hash.slice(1)
-        if (id === '') {
-        const parentEL = document.querySelector('.bbc-home')
-        // parentEL.innerHTML = ''
-        parentEL.insertAdjacentHTML('afterbegin', html)
-    }
-    })
-   
-}
+        `;
 
-generateMarkUpCnn(data) {
-    data.map(el => {
-        const html = `
+      const id = window.location.hash.slice(1);
+      if (id === "") {
+        const parentEL = document.querySelector(".bbc-home");
+        parentEL.insertAdjacentHTML("afterbegin", html);
+      }
+    });
+  }
+
+  generateMarkUpCnn(data) {
+    data.map((el) => {
+      const html = `
         <div class="news_container">
                   <div class="news_content">
                     <div class="media_image">
@@ -73,27 +69,24 @@ generateMarkUpCnn(data) {
                         <div class="media_date">${el.date}</div>
                         <div class="media_seperator">|</div>
                         <div class="media_categories">
-                          <a class="media_link" href="">${el.category}</a>
+                          <a class="media_link" href="#${el.category}">${el.category}</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-        `
-        // console.log(html)
-        const id =  window.location.hash.slice(1)
-        if (id === '') {
-        const parentEL = document.querySelector('.cnn-home')
-        // parentEL.innerHTML = ''
-        parentEL.insertAdjacentHTML('afterbegin', html)
-    }
-    })
-   
-}
+        `;
+      const id = window.location.hash.slice(1);
+      if (id === "") {
+        const parentEL = document.querySelector(".cnn-home");
+        parentEL.insertAdjacentHTML("afterbegin", html);
+      }
+    });
+  }
 
-generateMarkUpCarousel (data) {
-    data.map(el => {
-    const html = `
+  generateMarkUpCarousel(data) {
+    data.map((el) => {
+      const html = `
     <div class="carousel-item active">
               <img
                 src="${el.image}"
@@ -114,18 +107,17 @@ generateMarkUpCarousel (data) {
                     <div class="content_date">${el.date}</div>
                     <div class="date_seperator">|</div>
                     <div class="content_categories">
-                      <a class="cat_link" href="">${el.category}</a>
+                      <a class="cat_link" href="#${el.category}">${el.category}</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-    `
-    const carousel = document.querySelector('.carousel-inner')
-    // console.log(html)
-    carousel.insertAdjacentHTML('afterbegin', html)
-})
-}
+    `;
+      const carousel = document.querySelector(".carousel-inner");
+      carousel.insertAdjacentHTML("afterbegin", html);
+    });
+  }
 }
 
-export default new hompageView()
+export default new hompageView();
