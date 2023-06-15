@@ -89,7 +89,7 @@ export const getContentDetails = async function (id) {
       return {
         title: res.title,
         id: res.id,
-        slug: res.slug,
+        slug: res.slug, 
         description: res.short_description,
         category: res.category,
         date: res.date,

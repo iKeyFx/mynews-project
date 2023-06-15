@@ -34,3 +34,13 @@ export const timerContentDetails = function () {
     spinnerClass.style.display = "none";
   }, 2000);
 };
+
+export const timerHompage = () => {
+  const mainTag = document.getElementsByTagName('main')[0];
+  mainTag.style.display = 'none';
+  spinnerClass.style.display = "grid";
+  setTimeout(() => {
+    mainTag.style.display = 'grid';
+    spinnerClass.style.display = "none";
+  }, 2000);
+};

@@ -62,6 +62,9 @@ body {
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
+.error-pop {
+  margin: 1.5rem;
+}
 .error-div {
   display: flex;
   justify-content: center;
@@ -734,5 +737,41 @@ footer p {
   }
   .breadcrumb a {
     color: var(--cl--red);
+  }
+  .errorlead {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    position: relative;
+    font-size: 0.8rem;
+    padding: 2rem;
+    background-color: var(--cl--white);
+    box-shadow: none;
+  }
+  .error-pop {
+    margin: 0;
+  }
+  .error-div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: var(--cl--white);
+    position: relative;
+    
+  }
+  .error-ok {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+  }
+  .overlay {
+    display: none;
+    position: static;
+
   }
 }

@@ -141,6 +141,7 @@ const loadContentPage = async function () {
       clearView.clearSections();
     }
     if (id === "") {
+      timeHandler.timerHompage()
       clearView.clearForHome();
     }
     const singleSourcePage = document.querySelector(".single_source_con");
